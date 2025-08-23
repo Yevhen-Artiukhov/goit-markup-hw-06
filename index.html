@@ -50,11 +50,24 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
     <main>
       <!-- Solutions -->
-      <section class="section-one">
+      <section class="section-one hidden">
         <div class="container main-container">
           <h1 class="text-section-one">
             Effective Solutions for Your Business
@@ -66,7 +79,7 @@
       </section>
 
       <!-- Foundations -->
-      <section class="section-foundation">
+      <section class="section-foundation hidden">
         <div class="container container-foundation">
           <h2 class="section-two-head-title visually-hidden">Foundation</h2>
           <ul class="foundation-list">
@@ -123,7 +136,7 @@
       </section>
 
       <!-- Team -->
-      <section class="section-three">
+      <section class="section-three hidden">
         <div class="container container-three">
           <h2 class="section-three-title">Our Team</h2>
           <ul class="team-list">
@@ -300,7 +313,7 @@
       </section>
 
       <!-- Our portfolio -->
-      <section class="section-four">
+      <section class="section-four hidden">
         <div class="container container-four">
           <h2 class="section-four-title">Our Portfolio</h2>
           <ul class="portfolio-grid">
@@ -423,7 +436,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-media">
         <div class="footer-one">
           <a class="logo footer-logo" href="./index.html"
@@ -490,7 +503,7 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg width="8" height="8">
@@ -573,5 +586,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
